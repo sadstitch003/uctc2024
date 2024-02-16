@@ -1,0 +1,69 @@
+@font-face {
+    font-family: EFCOBrookshire;
+    src: url('font/EFCO\ Brookshire\ Regular.woff') format('woff'),
+         url('font/EFCO\ Brookshire\ Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: AlbertusNova;
+    src: url('font/AlbertusNovaLight.woff') format('woff'),
+         url('font/AlbertusNovaLight.woff2') format('woff2');
+}
+
+.screen-size {
+    width: 100%;
+    margin: 0px;
+}
+
+.screen-heigt {
+    height: 100vh;
+}
+
+.gradient-background {
+    background-image: linear-gradient(180deg, #4A2A84, #AB5F68, #DCC58C);
+}
+
+.default-background {
+    background-color: #DCC58C;
+}
+
+.title {
+    font-family: EFCOBrookshire;
+    font-size: 80px;
+    color: #FFFFCF;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+.subtitle {
+    font-family: EFCOBrookshire;
+    color: white;
+    font-size: 1.7vw;
+}
+
+@media only screen and (max-width: 990px) {
+    .subtitle {
+        font-size: 30px !important;
+    }
+ }
+
+.justify {
+    text-align: justify;
+}
+
+
+.rounded-box {
+    background: linear-gradient(180deg, rgba(74, 42, 132, 0.5), rgba(171, 95, 104, 0.5), rgba(171, 95, 104, 0.5), rgba(220, 197, 140, 0.5));
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.row-padding {
+    height: 40px;
+}
+
+p {
+    font-family: AlbertusNova;
+    color: white;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+}
