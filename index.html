@@ -231,13 +231,22 @@
         </div>
     </div>
 
-    <a href="#daftar-lomba" class="scrolldown">
+    <a class="scrolldown" onclick="scrollToDaftarLomba(event)">
         <div class="circle">
             <img src="assets/arrow.png" style="color: white;">
         </div>
         <div class="clearfix"></div>
-        <span style="font-weight: bold; line-height: 95%; text-shadow: 0px 0px 5px #6B3338;">DAFTAR<br>LOMBA</span>
+        <span>DAFTAR<br>LOMBA</span>
         <div class="line-horizontal"></div>
     </a>
 </body>
+
+<script>
+    function scrollToDaftarLomba(event) {
+        event.preventDefault();
+        var daftarLombaSection = document.getElementById('daftar-lomba');
+        daftarLombaSection.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
 </html>
