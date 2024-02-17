@@ -31,6 +31,11 @@
     background-color: #DCC58C;
 }
 
+.overflow-hidden {
+    position: absolute;
+    overflow: hidden;
+}
+
 .title {
     font-family: EFCOBrookshire;
     font-size: 80px;
