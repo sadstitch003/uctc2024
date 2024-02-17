@@ -37,7 +37,7 @@
     margin: 0px;
 }
 
-.screen-heigt {
+.screen-height {
     min-height: 120vh;
 }
 
@@ -180,6 +180,14 @@ a:hover {
     animation: fadeUp 6s ease-out;
 }
 
+.element {
+    top: 50vh;
+}
+
+.element2 {
+    top: 45vh;
+}
+
 @media only screen and (max-width: 990px) {
     .subtitle {
         font-size: 28px !important;
@@ -221,8 +229,17 @@ a:hover {
         text-shadow: 0px 0px 2px #6B3338;
     }
 
-    .screen-heigt {
+    .screen-height {
         min-height: 100vh;
+        padding-top: 20vh;
+    }
+
+    .element {
+        top: 70vh;
+    }
+    
+    .element2 {
+        top: 65vh;
     }
  }
 
