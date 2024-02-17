@@ -171,4 +171,8 @@ a:hover {
         font-size: 24px;
         text-shadow: 0px 0px 2px #6B3338;
     }
+
+    .screen-heigt {
+        min-height: 70vh;
+    }
  }
