@@ -113,6 +113,12 @@ p {
     transform: translate(-50%, -50%);
 }
 
+span {
+    font-weight: bold;
+    line-height: 95%;
+    text-shadow: 0px 0px 5px #6B3338;
+}
+
 a:hover {
     color: white;
 }
@@ -137,5 +143,32 @@ a:hover {
 
     p {
         font-size: 36px;
+    }
+
+    .scrolldown {
+        position: fixed;
+        bottom: 0px;
+        right: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        z-index: 1000;
+    }
+
+    .line-horizontal {
+        margin-top: 10px;
+        height: 40px;
+        width: 8px;
+    }
+    
+    .circle {
+        border: 8px solid white;
+        width: 100px;
+        height: 100px;
+    }
+    
+    span {
+        font-size: 20px;
+        text-shadow: 0px 0px 2px #6B3338;
     }
  }
