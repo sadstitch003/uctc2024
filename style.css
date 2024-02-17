@@ -10,6 +10,28 @@
          url('font/AlbertusNovaLight.woff2') format('woff2');
 }
 
+.ribbon {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: EFCOBrookshire;
+    color: #fff;
+
+    --s: 1.5em; /* the ribbon size */
+    --d: .6em;  /* the depth */
+    --c: 1em;  /* the cutout part */
+
+    padding: 0 calc(var(--s) + 1.7em) var(--d);
+    line-height: 1.8;
+    background:
+        conic-gradient(at left  var(--s) bottom var(--d),
+        #0000 25%,#0008 0 37.5%,#0004 0) 0   /50% 100% no-repeat,
+        conic-gradient(at right var(--s) bottom var(--d),
+        #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% 100% no-repeat;
+    clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
+    background-color: #6B3338; /* the main color */
+    width: fit-content;
+}
+
 .screen-size {
     width: 100%;
     margin: 0px;
@@ -138,6 +160,26 @@ a:hover {
     margin-right: auto;
 }
 
+.fade-up {
+    animation: fadeUp 1s ease-out;
+}
+
+.fade-up-delayed-1 {
+    animation: fadeUp 1s ease-out;
+}
+
+.fade-up-delayed-2 {
+    animation: fadeUp 2s ease-out;
+}
+
+.fade-up-delayed-3 {
+    animation: fadeUp 3s ease-out;
+}
+
+.fade-up-delayed-4 {
+    animation: fadeUp 6s ease-out;
+}
+
 @media only screen and (max-width: 990px) {
     .subtitle {
         font-size: 28px !important;
@@ -180,6 +222,17 @@ a:hover {
     }
 
     .screen-heigt {
-        min-height: 70vh;
+        min-height: 100vh;
     }
  }
+
+ @keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
