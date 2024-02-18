@@ -11,7 +11,7 @@
 }
 
 * {
-    z-index: 5;
+    z-index: 3;
 }
 
 p {
@@ -27,7 +27,7 @@ p {
 }
 
 .screen-height {
-    height: 120vh;
+    height: 114vh;
 }
 
 .gradient-background {
@@ -91,6 +91,7 @@ p {
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    z-index: 6;
 }
 
 .row-padding {
@@ -194,11 +195,11 @@ a:hover {
 }
 
 .element {
-    top: 50vh;
+    top: 46vh;
 }
 
 .element2 {
-    top: 45vh;
+    top: 46vh;
 }
 
 .side-menu {
@@ -214,6 +215,7 @@ a:hover {
     color: #fff;
     display: inline-block;
     min-width: 35vw;
+    z-index: 6;
 
     --s: 1.5em; /* the ribbon size */
     --d: .6em;  /* the depth */
@@ -281,12 +283,12 @@ a:hover {
 
     .element {
         top: 60vh;
-        width: 0vw;
+        width: 50%;
     }
     
     .element2 {
         top: 60vh;
-        width: 0vw;
+        width: 50%;
     }
 
     .ribbon {
