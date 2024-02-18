@@ -36,7 +36,7 @@ p {
 
 .gradient-background-reversed {
     position: relative;
-    background-image: linear-gradient(0deg, #ab5f68d8, #DCC58C, #DCC58C);
+    background-image: linear-gradient(0deg, #AB5F68, #DCC58C);
 }
 
 .overlay {
