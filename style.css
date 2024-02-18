@@ -233,6 +233,12 @@ a:hover {
     width: fit-content;
 }
 
+.footer {
+    background: #DCC58C;
+    min-height: 10vh;
+    box-shadow: 2px 0px 3px #4A2A84;
+}
+
 @media only screen and (max-width: 990px) {
     .subtitle {
         font-size: 28px !important;
@@ -277,18 +283,17 @@ a:hover {
     }
 
     .screen-height {
-        height: 90vh;
-        padding-top: 10vh;
+        height: 50vh;
     }
 
     .element {
-        top: 60vh;
-        width: 50%;
+        top: 30vh;
+        left: 0px;
     }
     
     .element2 {
-        top: 60vh;
-        width: 50%;
+        top: 30vh;
+        right: 0px;
     }
 
     .ribbon {
