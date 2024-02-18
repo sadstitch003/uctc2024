@@ -23,7 +23,7 @@ p {
 }
 
 .screen-height {
-    min-height: 120vh;
+    height: 120vh;
 }
 
 .gradient-background {
@@ -95,10 +95,13 @@ p {
 .scrolldown {
     position: fixed;
     bottom: 0px;
-    right: 20px;
+    right: 40px;
     text-align: center;
     text-decoration: none;
     color: white;
+    background-color: #ab5f68;
+    padding: 10px 10px 0px 10px;
+    box-shadow: 8px 8px 0px #6B3338;
     z-index: 1000;
 }
 
@@ -108,7 +111,7 @@ p {
     width: 50px;
     height: 50px;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     box-shadow: 1px 1px 2px #6B3338;
 }
 
@@ -123,7 +126,7 @@ p {
 
 span #anchor-lomba{
     font-weight: bold;
-    line-height: 95%;
+    line-height: 50%;
     text-shadow: 0px 0px 5px #6B3338;
 }
 
@@ -138,6 +141,19 @@ a:hover {
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.fade-element {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in-visible {
+    opacity: 1;
+}
+
+.fade-out-visible {
+    opacity: 0;
 }
 
 .fade-up {
@@ -180,7 +196,7 @@ a:hover {
     font-family: EFCOBrookshire;
     color: #fff;
     display: inline-block;
-    min-width: 30vw;
+    min-width: 35vw;
 
     --s: 1.5em; /* the ribbon size */
     --d: .6em;  /* the depth */
@@ -209,7 +225,7 @@ a:hover {
     }
 
     p {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .scrolldown {
@@ -234,14 +250,13 @@ a:hover {
         height: 120px;
     }
     
-    span #anchor-lomba{
-        font-size: 24px;
+    #anchor-lomba{
+        font-size: 2rem;
         text-shadow: 0px 0px 2px #6B3338;
     }
 
     .screen-height {
-        min-height: 100vh;
-        padding-top: 25vh;
+        padding-top: 30vh;
     }
 
     .element {

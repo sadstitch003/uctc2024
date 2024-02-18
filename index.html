@@ -181,8 +181,8 @@
 
     <div class="row justify-content-center screen-size default-background py-4">
         <div class="col-11 col-xl-9">
-            <div class="row rounded-box" style="padding: 0px 60px;">
-                <div class="col-12 title text-center py-4">
+            <div class="row rounded-box fade-element fade-in-out" style="padding: 0px 60px;">
+                <div class="col-12 title text-center pt-4">
                     Pendahuluan
                 </div>
                 <p class="justify px-4">
@@ -195,11 +195,10 @@
         </div>
 
         <div class="row-padding"></div>
-        <div class="row-padding"></div>
 
         <div class="col-11 col-xl-9">
-            <div class="row rounded-box" style="padding: 0px 60px;">
-                <div class="col-12 title text-center py-4">
+            <div class="row rounded-box fade-element fade-in-out" style="padding: 0px 60px;">
+                <div class="col-12 title text-center pt-4">
                     Tema
                 </div>
                 <p class="justify px-4">
@@ -210,13 +209,10 @@
                 
             </div>
         </div>
-
-        <div class="row-padding"></div>
-        <div class="row-padding"></div>
     </div>
 
     <div class="row justify-content-center screen-size gradient-background-reversed" id="daftar-lomba">
-        <div class="col-12 title-dark text-center" style="padding: 60px 0px;">
+        <div class="col-12 title-dark text-center" style="padding: 40px 0px;">
             Daftar Lomba
         </div>
         
@@ -369,8 +365,9 @@
         </div>
 
         <div class="row-padding"></div>
-        <div class="row-padding"></div>
-        <div class="row-padding"></div>
+        <div class="footer">
+            
+        </div>
     </div>
 
     <a class="scrolldown" onclick="scrollToDaftarLomba(event)">
@@ -378,7 +375,7 @@
             <img src="assets/arrow.png" style="color: white;">
         </div>
         <div class="clearfix"></div>
-        <span id="anchor-lomba">DAFTAR<br>LOMBA</span>
+        <span id="anchor-lomba">LOMBA</span>
         <div class="line-horizontal"></div>
     </a>
 </body>
@@ -421,6 +418,39 @@
             document.getElementById("countdown").innerHTML = "uctc 2024 has started";
         }
     }, 1000);
+
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Function to handle the scroll event
+    function handleScroll() {
+        var elements = document.querySelectorAll('.fade-in-out');
+        elements.forEach(function(element) {
+            if (isInViewport(element)) {
+                element.classList.add('fade-in-visible');
+                element.classList.remove('fade-out-visible');
+            } else {
+                element.classList.remove('fade-in-visible');
+                element.classList.add('fade-out-visible');
+            }
+        });
+    }
+
+    // Add scroll event listener to trigger handleScroll function
+    window.addEventListener('scroll', handleScroll);
+
+    // Trigger handleScroll initially to check elements in view on page load
+    handleScroll();
+
+
     </script>
 
 </html>
