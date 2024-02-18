@@ -179,9 +179,23 @@
         <div class="row-padding"></div>
     </div>
 
-    <div class="row justify-content-center screen-size default-background py-4">
+    <div class="row justify-content-center screen-size default-background py-4" style="overflow: hidden;">
+        
+        <div style="position: relative;">
+            <img src="assets/wayang.png"
+            style="
+                position: absolute;
+                z-index: 0;
+                width: 25vw;
+                right: 0vw;
+                top: 0vw;
+                opacity: 0.5;
+                rotate: -15deg;
+            ">
+        </div>
+        
         <div class="col-11 col-xl-9">
-            <div class="row rounded-box fade-element fade-in-out" style="padding: 0px 60px;">
+            <div class="row rounded-box fade-element fade-in-out" style="padding: 0px 60px; z-index: 4;">
                 <div class="col-12 title text-center pt-4">
                     Pendahuluan
                 </div>
@@ -194,10 +208,20 @@
             </div>
         </div>
 
-        <div class="row-padding"></div>
+        <div class="row-padding" style="position: relative; z-index: 10;">
+                <img src="assets/daun.png"
+                style="
+                    position: absolute;
+                    z-index: 1000;
+                    width: 15vw;
+                    left: -3vw;
+                    top: -10vw;
+                    rotate: -10deg;
+                ">
+        </div>
 
         <div class="col-11 col-xl-9">
-            <div class="row rounded-box fade-element fade-in-out" style="padding: 0px 60px;">
+            <div class="row rounded-box fade-element fade-in-out" style="padding: 0px 60px; z-index: 4;">
                 <div class="col-12 title text-center pt-4">
                     Tema
                 </div>
@@ -209,20 +233,37 @@
                 
             </div>
         </div>
+        
+        
+        <div class="row-padding default-background" style="position: relative; z-index: 10;">
+            <img src="assets/bunga.png"
+            style="
+                position: absolute;
+                z-index: 1000;
+                width: 23vw;
+                right: -10vw;
+                top: -23vw;
+                rotate: -30deg;
+            ">
+        </div>
+
     </div>
 
     <div class="row justify-content-center screen-size gradient-background-reversed" id="daftar-lomba">
+
+        <img src="assets/cloud.png" class="overlay">
+
         <div class="col-12 title-dark text-center" style="padding: 40px 0px;">
             Daftar Lomba
         </div>
         
-        <div class="col-12">
-            <div class="row justify-content-center">
-                <div class="col-10 col-lg-3">
+        <div class="col-8">
+            <div class="row justify-content-around">
+                <div class="col-8 col-lg-4 p-4 my-4 my-lg-0">
                     <img src="assets/Lomba1.png" width="100%" style="object-fit: cover; object-position: center;">
 
                     <div class="row justify-content-center py-2">
-                        <div class="col-md-10 col-lg-8 col-xl-6 text-center mb-4 mb-lg-1">
+                        <div class="col-md-10 col-lg-8 col-xl-6 text-center my-4 my-lg-1">
                             <a href="#" style="text-decoration: none; color: white;">
                                 <div class="button">
                                     Daftar Lomba
@@ -240,11 +281,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3">
+                <div class="col-8 col-lg-4 p-4 my-4 my-lg-0">
                     <img src="assets/Lomba2.png" width="100%" style="object-fit: cover; object-position: center;">
 
                     <div class="row justify-content-center py-2">
-                        <div class="col-md-10 col-lg-8 col-xl-6 text-center mb-4 mb-lg-1">
+                        <div class="col-md-10 col-lg-8 col-xl-6 text-center my-4 my-lg-1">
                             <a href="#" style="text-decoration: none; color: white;">
                                 <div class="button">
                                     Daftar Lomba
@@ -263,11 +304,11 @@
                     </div>
                     
                 </div>
-                <div class="col-10 col-lg-3">
+                <div class="col-8 col-lg-4 p-4 my-4 my-lg-0">
                     <img src="assets/Lomba3.png" width="100%" style="object-fit: cover; object-position: center;">
                     
                     <div class="row justify-content-center py-2">
-                        <div class="col-md-10 col-lg-8 col-xl-6 text-center mb-4 mb-lg-1">
+                        <div class="col-md-10 col-lg-8 col-xl-6 text-center my-4 my-lg-1">
                             <a href="#" style="text-decoration: none; color: white;">
                                 <div class="button">
                                     Daftar Lomba
@@ -291,12 +332,12 @@
 
             <div class="row-padding"></div>
 
-            <div class="row justify-content-center">
-                <div class="col-10 col-lg-3">
+            <div class="row justify-content-around">
+                <div class="col-8 col-lg-4 p-4 my-4 my-lg-0">
                     <img src="assets/Lomba4.png" width="100%" style="object-fit: cover; object-position: center;">
                     
                     <div class="row justify-content-center py-2">
-                        <div class="col-md-10 col-lg-8 col-xl-6 text-center mb-4 mb-lg-1">
+                        <div class="col-md-10 col-lg-8 col-xl-6 text-center my-4 my-lg-1">
                             <a href="#" style="text-decoration: none; color: white;">
                                 <div class="button">
                                     Daftar Lomba
@@ -315,11 +356,11 @@
                     </div>
                     
                 </div>
-                <div class="col-10 col-lg-3">
+                <div class="col-8 col-lg-4 p-4 my-4 my-lg-0">
                     <img src="assets/Lomba5.png" width="100%" style="object-fit: cover; object-position: center;">
                     
                     <div class="row justify-content-center py-2">
-                        <div class="col-md-10 col-lg-8 col-xl-6 text-center mb-4 mb-lg-1">
+                        <div class="col-md-10 col-lg-8 col-xl-6 text-center my-4 my-lg-1">
                             <a href="#" style="text-decoration: none; color: white;">
                                 <div class="button">
                                     Daftar Lomba
@@ -338,11 +379,11 @@
                     </div>
                     
                 </div>
-                <div class="col-10 col-lg-3">
+                <div class="col-8 col-lg-4 p-4 my-4 my-lg-0">
                     <img src="assets/Lomba6.png" width="100%" style="object-fit: cover; object-position: center;">
                     
                     <div class="row justify-content-center py-2">
-                        <div class="col-md-10 col-lg-8 col-xl-6 text-center mb-4 mb-lg-1">
+                        <div class="col-md-10 col-lg-8 col-xl-6 text-center my-4 my-lg-1">
                             <a href="#" style="text-decoration: none; color: white;">
                                 <div class="button">
                                     Daftar Lomba
