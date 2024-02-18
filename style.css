@@ -237,7 +237,8 @@ a:hover {
     }
 
     .button {
-        font-size: 64;
+        font-size: 36;
+        line-height: 80px;
         border-radius: 100px;
     }
 
