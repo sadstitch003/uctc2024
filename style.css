@@ -83,7 +83,7 @@ p {
 
 .button {
     font-family: EFCOBrookshire;
-    font-size: 20px;
+    font-size: 24px;
     color: white;
     width: 100%;
     padding: 3px;
@@ -221,7 +221,8 @@ a:hover {
     }
 
     .button {
-        font-size: 40px;
+        font-size: 64;
+        border-radius: 100px;
     }
 
     p {
