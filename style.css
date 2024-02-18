@@ -306,6 +306,14 @@ a:hover {
     .ribbon {
         font-size: 1.6rem;
     }
+
+    .kipas {
+        opacity: 0;
+    }
+
+    .kipas1 {
+        opacity: 0;
+    }
  }
 
  @keyframes fadeUp {
