@@ -10,10 +10,6 @@
          url('font/AlbertusNovaLight.woff2') format('woff2');
 }
 
-* {
-    z-index: 3;
-}
-
 p {
     font-family: AlbertusNova;
     font-size: 20px;
@@ -179,11 +175,12 @@ a:hover {
 }
 
 .ribbon {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 200;
     font-family: EFCOBrookshire;
     color: #fff;
     display: inline-block;
+    min-width: 30vw;
 
     --s: 1.5em; /* the ribbon size */
     --d: .6em;  /* the depth */
@@ -244,7 +241,7 @@ a:hover {
 
     .screen-height {
         min-height: 100vh;
-        padding-top: 20vh;
+        padding-top: 25vh;
     }
 
     .element {
@@ -253,6 +250,10 @@ a:hover {
     
     .element2 {
         top: 65vh;
+    }
+
+    .ribbon {
+        font-size: 1.6rem;
     }
  }
 
