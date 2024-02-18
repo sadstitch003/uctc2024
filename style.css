@@ -10,26 +10,15 @@
          url('font/AlbertusNovaLight.woff2') format('woff2');
 }
 
-.ribbon {
-    font-size: 28px;
-    font-weight: bold;
-    font-family: EFCOBrookshire;
-    color: #fff;
+* {
+    z-index: 3;
+}
 
-    --s: 1.5em; /* the ribbon size */
-    --d: .6em;  /* the depth */
-    --c: 1em;  /* the cutout part */
-
-    padding: 0 calc(var(--s) + 1.7em) var(--d);
-    line-height: 1.8;
-    background:
-        conic-gradient(at left  var(--s) bottom var(--d),
-        #0000 25%,#0008 0 37.5%,#0004 0) 0   /50% 100% no-repeat,
-        conic-gradient(at right var(--s) bottom var(--d),
-        #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% 100% no-repeat;
-    clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
-    background-color: #6B3338;
-    width: fit-content;
+p {
+    font-family: AlbertusNova;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 }
 
 .screen-size {
@@ -51,6 +40,8 @@
 
 .default-background {
     background-color: #DCC58C;
+    background-image: url('assets/cloud.png');
+    background-repeat: repeat-y;
 }
 
 .overflow-hidden {
@@ -94,13 +85,6 @@
     height: 40px;
 }
 
-p {
-    font-family: AlbertusNova;
-    font-size: 20px;
-    color: white;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-}
-
 .button {
     font-family: EFCOBrookshire;
     font-size: 20px;
@@ -141,7 +125,7 @@ p {
     transform: translate(-50%, -50%);
 }
 
-span {
+span #anchor-lomba{
     font-weight: bold;
     line-height: 95%;
     text-shadow: 0px 0px 5px #6B3338;
@@ -177,7 +161,7 @@ a:hover {
 }
 
 .fade-up-delayed-4 {
-    animation: fadeUp 6s ease-out;
+    animation: fadeUp 5s ease-out;
 }
 
 .element {
@@ -186,6 +170,35 @@ a:hover {
 
 .element2 {
     top: 45vh;
+}
+
+.side-menu {
+    background-color: white;
+    width: 5vw;
+    float: left;
+}
+
+.ribbon {
+    font-size: 48px;
+    font-weight: 200;
+    font-family: EFCOBrookshire;
+    color: #fff;
+    display: inline-block;
+
+    --s: 1.5em; /* the ribbon size */
+    --d: .6em;  /* the depth */
+    --c: 1em;  /* the cutout part */
+
+    padding: 0 calc(var(--s) + 1.7em) var(--d);
+    line-height: 1.8;
+    background:
+        conic-gradient(at left  var(--s) bottom var(--d),
+        #0000 25%,#0008 0 37.5%,#0004 0) 0   /50% 100% no-repeat,
+        conic-gradient(at right var(--s) bottom var(--d),
+        #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% 100% no-repeat;
+    clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
+    background-color: #6B3338;
+    width: fit-content;
 }
 
 @media only screen and (max-width: 990px) {
@@ -224,7 +237,7 @@ a:hover {
         height: 120px;
     }
     
-    span {
+    span #anchor-lomba{
         font-size: 24px;
         text-shadow: 0px 0px 2px #6B3338;
     }
