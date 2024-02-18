@@ -208,7 +208,7 @@ a:hover {
 }
 
 .ribbon {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 200;
     font-family: EFCOBrookshire;
     color: #fff;
@@ -276,15 +276,17 @@ a:hover {
 
     .screen-height {
         height: 90vh;
-        padding-top: 25vh;
+        padding-top: 10vh;
     }
 
     .element {
         top: 70vh;
+        width: 0vw;
     }
     
     .element2 {
-        top: 65vh;
+        top: 70vh;
+        width: 0vw;
     }
 
     .ribbon {
